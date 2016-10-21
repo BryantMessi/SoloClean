@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="629b48d722073dc1af9cfb5c8776429fdbac0201">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_205ddd6e99adb1dd47be7392090023abac50b768/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="2493555b181223ae9eebf7c2b4adf0a6bda1718e">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_91b96d00660007424ee664c1815bed8e5793b9bf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/opt/android-sdks/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_6fd6f4b395318a3b7f0ce27e70fa37a56f580953/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_ec8f247a5883a591ac30d2714a1d1af9726a2010/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_7536c34635688e6bdaf31aa3ca8875cd84bd6d73/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_aa1e82ea8a092d15085cede83eaa957a07f4acfb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_26bf0a82b7ac2c626161bc82272ef6d5fa1a0498/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_662724e2324e954d229a3a50f10d177ffd3029c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_3cf79dc31ad8c23177a2cfacae2ee136d6232216/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_9296516b0ce27dc333502999b84907839cce24af/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_2e73165e7a2a906a6f8f1d7b938c7c781b53fdb2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_f1fee03eb5eeda1ca33188637c5698a28d8fe771/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_a417c43cf167d1b9d07cacc8d673a62e3cf18748/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_5bfb8db28f292b4a7787270bfbddcda622d0c5e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_27f374c9cdcf8d5021a1ed2ee7ded4e10bc60f36/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_860eb3ced1a7dd8af20974965b08726822abf42a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/badguy/GitProjects/SoloClean/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/badguy/GitProjects/SoloClean/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_675eb73d652d38e5519894113304763e66104734/classes.dex" />
+    </item>
+
+</items>
