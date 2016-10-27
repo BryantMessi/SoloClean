@@ -6,7 +6,7 @@ import android.content.Context;
  * Created by Messi on 16-10-20.
  */
 
-public interface FastGarbagePresenter {
+public interface GarbagePresenter {
     void queryCacheFiles(Context context);
 
     void queryResidualFiles(Context context);
@@ -16,4 +16,6 @@ public interface FastGarbagePresenter {
     void queryInstalledPackages(Context context);
 
     void queryBigFiles(Context context);
+
+    void queryMemoryGarbage(Context context);
 }

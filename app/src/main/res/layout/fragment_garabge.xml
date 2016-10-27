@@ -1,14 +1,51 @@
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.solo.soloclean.garbage.ui.GarbageFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/txt_info"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"/>
+        android:layout_height="wrap_content"/>
 
-</FrameLayout>
+    <Button
+        android:id="@+id/btn_cache_file"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="CacheFiles"/>
+
+    <Button
+        android:id="@+id/btn_residual_file"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="ResidualFiles"/>
+    <Button
+        android:id="@+id/btn_temp_file"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="TempFiles"/>
+    <Button
+        android:id="@+id/btn_ad_file"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="ADFiles"/>
+    <Button
+        android:id="@+id/btn_installed_file"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="InstalledPackages"/>
+    <Button
+        android:id="@+id/btn_big_file"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="BigFiles"/>
+    <Button
+        android:id="@+id/btn_memory_file"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="MemoryFiles"/>
+</LinearLayout>

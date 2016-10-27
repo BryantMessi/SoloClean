@@ -3,9 +3,11 @@ package com.solo.soloclean.garbage.presenter;
 import android.content.Context;
 
 import com.solo.soloclean.garbage.beans.GarbageBean;
-import com.solo.soloclean.garbage.model.FastGarbageModel;
-import com.solo.soloclean.garbage.model.FastGarbageModelImpl;
-import com.solo.soloclean.garbage.view.FastGarbageView;
+import com.solo.soloclean.garbage.model.GarbageModel;
+import com.solo.soloclean.garbage.model.GarbageModelImpl;
+import com.solo.soloclean.garbage.view.GarbageView;
+import com.solo.soloclean.memory.bean.MemoryBean;
+import com.solo.soloclean.memory.model.MemoryModelImpl;
 
 import java.util.List;
 
@@ -13,14 +15,14 @@ import java.util.List;
  * Created by Messi on 16-10-21.
  */
 
-public class FastGarbagePresenterImpl implements FastGarbagePresenter, FastGarbageModelImpl.OnGarbageQueryListener {
+public class GarbagePresenterImpl implements GarbagePresenter, GarbageModelImpl.OnGarbageQueryListener, MemoryModelImpl.OnGetRunningProcessListener {
 
-    private FastGarbageModel mGarbageModel;
-    private FastGarbageView mGarbageView;
+    private GarbageModel mGarbageModel;
+    private GarbageView mGarbageView;
 
-    public FastGarbagePresenterImpl(FastGarbageView view) {
+    public GarbagePresenterImpl(GarbageView view) {
         this.mGarbageView = view;
-        mGarbageModel = new FastGarbageModelImpl();
+        mGarbageModel = new GarbageModelImpl();
     }
 
     @Override
@@ -49,6 +51,11 @@ public class FastGarbagePresenterImpl implements FastGarbagePresenter, FastGarba
     }
 
     @Override
+    public void queryMemoryGarbage(Context context) {
+
+    }
+
+    @Override
     public void onCacheFilesQuery(List<GarbageBean> cacheFiles) {
 
     }
@@ -70,6 +77,36 @@ public class FastGarbagePresenterImpl implements FastGarbagePresenter, FastGarba
 
     @Override
     public void onBigFilesQuery(List<GarbageBean> cacheFiles) {
+
+    }
+
+    @Override
+    public void onMemoryGarbageQuery(List<GarbageBean> cacheFiles) {
+
+    }
+
+    @Override
+    public void onGetRunningProcessInfo(List<MemoryBean> memoryBeanList) {
+
+    }
+
+    @Override
+    public void onGetRunningProcessSize(float size) {
+
+    }
+
+    @Override
+    public void onGetTotalMemorySize(float size) {
+
+    }
+
+    @Override
+    public void onGetAvailableMemorySize(float size) {
+
+    }
+
+    @Override
+    public void onFinishClearRunningProcess() {
 
     }
 }

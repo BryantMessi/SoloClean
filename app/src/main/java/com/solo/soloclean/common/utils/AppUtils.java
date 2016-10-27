@@ -53,4 +53,17 @@ public class AppUtils {
         }
         return appList;
     }
+
+    public static boolean isAppInstalled(Context context, String pkgName) {
+        boolean flag;
+        try {
+            PackageManager pm = context.getPackageManager();
+            PackageInfo info = pm.getPackageInfo(pkgName, PackageManager.GET_GIDS);
+            flag = info != null;
+        } catch (Exception e) {
+            // 抛出找不到的异常，说明该程序已经被卸载
+            flag = false;
+        }
+        return flag;
+    }
 }

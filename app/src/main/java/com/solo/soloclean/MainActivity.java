@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 
+import com.solo.soloclean.garbage.ui.GarbageFragment;
 import com.solo.soloclean.memory.ui.MemoryFragment;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         FragmentTransaction ft = fm.beginTransaction();
         switch (id) {
             case R.id.btn_garbage:
+                ft.replace(R.id.flyt_container, GarbageFragment.newInstance(null, null));
                 break;
             case R.id.btn_memory:
                 ft.replace(R.id.flyt_container, MemoryFragment.newInstance(null, null));
