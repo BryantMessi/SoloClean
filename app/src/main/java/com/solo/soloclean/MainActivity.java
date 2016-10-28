@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 
 import com.solo.soloclean.garbage.ui.GarbageFragment;
 import com.solo.soloclean.memory.ui.MemoryFragment;
+import com.solo.soloclean.safe.ui.SafeFragment;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 ft.replace(R.id.flyt_container, MemoryFragment.newInstance(null, null));
                 break;
             case R.id.btn_safe:
+                ft.replace(R.id.flyt_container, SafeFragment.newInstance(null, null));
                 break;
         }
         ft.commit();
