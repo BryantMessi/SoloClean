@@ -13,6 +13,8 @@ public interface MemoryModel {
 
     void getRunningProcessSize(Context context, MemoryModelImpl.OnGetRunningProcessListener listener);
 
+    void getRunningProcessPercent(Context context, MemoryModelImpl.OnGetRunningProcessListener listener);
+
     void getTotalMemorySize(Context context, MemoryModelImpl.OnGetRunningProcessListener listener);
 
     void getAvailableMemorySize(Context context, MemoryModelImpl.OnGetRunningProcessListener listener);

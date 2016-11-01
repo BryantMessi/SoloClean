@@ -3,6 +3,7 @@ package com.solo.soloclean.memory.ui;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,12 +15,13 @@ import com.solo.soloclean.memory.bean.MemoryBean;
 import com.solo.soloclean.memory.MemoryAdapter;
 import com.solo.soloclean.memory.presenter.MemoryPresenter;
 import com.solo.soloclean.memory.presenter.MemoryPresenterImpl;
+import com.solo.soloclean.memory.view.BaseMemoryView;
 import com.solo.soloclean.memory.view.MemoryView;
 
 import java.util.List;
 
 
-public class MemoryFragment extends Fragment implements MemoryView, View.OnClickListener {
+public class MemoryFragment extends Fragment implements BaseMemoryView, MemoryView, View.OnClickListener {
 
     private TextView mTxtTotal;
     private TextView mTxtAva;
@@ -50,7 +52,8 @@ public class MemoryFragment extends Fragment implements MemoryView, View.OnClick
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mPresenter = new MemoryPresenterImpl(this);
+        mPresenter = new MemoryPresenterImpl(this,this);
+        mPresenter.getRunningProcessPercent(getContext());
     }
 
     @Override
@@ -82,8 +85,18 @@ public class MemoryFragment extends Fragment implements MemoryView, View.OnClick
     }
 
     @Override
-    public void setRunningMemorySize(float size) {
+    public void setRunningProcessSize(float size) {
         mTxtCleanSize.setText("占用了：" + size);
+    }
+
+    @Override
+    public void setRunningProcessPercent(int percent) {
+        Log.d("messi","内存占用比例为 ："+percent);
+    }
+
+    @Override
+    public void clearRunningProcess() {
+
     }
 
     @Override
@@ -94,11 +107,6 @@ public class MemoryFragment extends Fragment implements MemoryView, View.OnClick
     @Override
     public void setAvailableMemorySize(float size) {
         mTxtAva.setText("可用内存为: " + size);
-    }
-
-    @Override
-    public void clearRunningProcessFinished() {
-
     }
 
     @Override

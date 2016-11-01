@@ -11,11 +11,7 @@ import java.util.List;
 public interface MemoryView {
     void setRunningMemoryInfo(List<MemoryBean> memoryBeanList);
 
-    void setRunningMemorySize(float size);
-
     void setTotalMemorySize(float size);
 
     void setAvailableMemorySize(float size);
-
-    void clearRunningProcessFinished();
 }

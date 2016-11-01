@@ -13,6 +13,8 @@ public interface MemoryPresenter {
 
     void getRunningProcessSize(Context context);
 
+    void  getRunningProcessPercent(Context context);
+
     void getTotalMemorySize(Context context);
 
     void getAvailableMemorySize(Context context);

@@ -12,9 +12,7 @@ import com.solo.soloclean.memory.bean.ProcessInfo;
 import com.solo.soloclean.memory.utils.ProcessManager;
 import com.solo.soloclean.common.utils.AppUtils;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -120,36 +118,23 @@ public class MemoryModelImpl implements MemoryModel {
     }
 
     @Override
+    public void getRunningProcessPercent(Context context, OnGetRunningProcessListener listener) {
+        long total = ProcessManager.getTotalMemorySize();
+        long ava = ProcessManager.getAvailableMemorySize(context);
+        double temp = (double)(total-ava);
+        double percent =(temp/total)*100;
+        DecimalFormat df = new DecimalFormat("###");
+        listener.onGetRunningProcessPercent(Integer.parseInt(df.format(percent)));
+    }
+
+    @Override
     public void getTotalMemorySize(Context context, OnGetRunningProcessListener listener) {
-        String str1 = "/proc/meminfo";// 系统内存信息文件
-        String str2;
-        String[] arrayOfString;
-        long total = 0;
-        try {
-            FileReader localFileReader = new FileReader(str1);
-            BufferedReader localBufferedReader = new BufferedReader(
-                    localFileReader, 8192);
-            str2 = localBufferedReader.readLine();// 读取meminfo第一行，系统总内存大小
-            arrayOfString = str2.split("\\s+");
-            for (String num : arrayOfString) {
-                Log.i(str2, num + "\t");
-            }
-            total = Integer.valueOf(arrayOfString[1]).intValue() * 1024;// 获得系统总内存，单位是KB，乘以1024转换为Byte
-            localBufferedReader.close();
-        } catch (IOException e) {
-        }
-        //return Formatter.formatFileSize(context, initial_memory);// Byte转换为KB或者MB，内存大小规格化
-        Log.d(TAG, "总内存大小为：" + total / (1024 * 1024));
-        listener.onGetTotalMemorySize(total / (1024 * 1024));
+        listener.onGetTotalMemorySize(ProcessManager.getTotalMemorySize() / (1024 * 1024));
     }
 
     @Override
     public void getAvailableMemorySize(Context context, OnGetRunningProcessListener listener) {
-        ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
-        ActivityManager.MemoryInfo mi = new ActivityManager.MemoryInfo();
-        am.getMemoryInfo(mi);
-        Log.d(TAG, "可用内存---->>>" + mi.availMem / (1024 * 1024));
-        listener.onGetAvailableMemorySize(mi.availMem / (1024 * 1024));
+        listener.onGetAvailableMemorySize(ProcessManager.getAvailableMemorySize(context) / (1024 * 1024));
     }
 
     @Override
@@ -162,6 +147,8 @@ public class MemoryModelImpl implements MemoryModel {
         void onGetRunningProcessInfo(List<MemoryBean> memoryBeanList);
 
         void onGetRunningProcessSize(float size);
+
+        void onGetRunningProcessPercent(int percent);
 
         void onGetTotalMemorySize(float size);
 
